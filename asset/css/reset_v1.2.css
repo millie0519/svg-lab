@@ -1,0 +1,127 @@
+/* --------------------
+최종 수정일자 : 2025.04.09
+-------------------- */
+
+body, html{
+    box-sizing: border-box;
+}
+body{
+    color: #1c1c1c;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    word-break: keep-all;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-tap-highlight-color : transparent !important; /* 모바일에서 focus나 action시 잡히는 백그라운드 리셋, 필요에 따라 사용 */
+}
+span{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+ol, ul, dl {
+    list-style: none;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    outline: none;
+}
+input, select, textarea, button{
+    box-sizing: border-box;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -o-border-radius:0;
+    border-radius:0;
+}
+input[type=button],
+input[type=submit]{
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+::placeholder{
+    font-weight: inherit;
+    font-size: inherit;
+    color: #DDD;
+}
+button, a{
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+    padding-left:15px;
+    background: url(/html/assets/img/common/select_arrow.png) no-repeat 95% 50%;
+}
+select::-ms-expand {display:none}
+blockquote, q {
+    quotes: none;
+    outline: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+    outline: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+input{
+    font-size: inherit;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    resize: none;
+    outline: none;
+}
+input[type=submit], input[type=button],
+button[type=submit], button[type=button]{
+    -webkit-appearance: none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -o-border-radius:0;
+    border-radius:0;
+}
+textarea, button, input, a, select, option, label{font-family: inherit;}
