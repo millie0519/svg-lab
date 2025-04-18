@@ -10,12 +10,12 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<style>
-		.container{width: 90%; max-width: 1100px; margin: 0 auto;}
+		.container-1100{width: 90%; max-width: 1100px; margin: 0 auto;}
 		.en{font-family: "Montserrat", sans-serif;}
 		.fira *{font-family: "Fira Code", monospace !important;}
 
 		header{box-shadow: 0 3px 5px rgba(0,0,0,.1);}
-		header .container{display: flex; align-items: center; justify-content: space-between; height: 80px;}
+		header .container-1100{display: flex; align-items: center; justify-content: space-between; height: 80px;}
 
 		.colorscripter-code{position: relative !important; overflow-x: auto; line-height: 1.3em; background-color: #ecf4ec;}
 		.colorscripter-code-table{border-radius: 4px; width: max-content; font-size: 14px; letter-spacing: -0.03em;}
@@ -35,7 +35,7 @@
 <body>
 	<div class="wrap">
 		<header>
-			<div class="container">
+			<div class="container-1100">
 				<h1 class="mb-0 fs-4 en">It's a collection of <strong>SVG ICONs</strong> that I use often..</h1>
 				<div class="rgt">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-2" viewBox="0 0 16 16">
@@ -49,8 +49,8 @@
 			</div>
 		</header>
 
-		<div class="container">
-			<ul class="nav nav-pills nav-fill mt-4 mt-md-5 mb-3 mb-md-4">
+		<div class="container-1100">
+			<ul class="nav nav-pills nav-fill mt-4 mt-md-5 mb-3 mb-md-4" id="cate-tab">
 				<li class="nav-item" role="presentation">
 					<button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
 				</li>
@@ -70,88 +70,130 @@
 
 			<div class="tab-content mb-5" id="pills-tabContent">
 				<div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-					<div class="row row-cols-1 row-cols-md-2 g-4">
-						<div class="col">
-							<div class="card">
-								<div class="p-3 pb-0">
-									<div class="text-center p-3">
-										<svg width="50" height="50" viewbox="0 0 10 10" stroke-width="1" fill="none" stroke="#000">
-											<polyline points="3,1 7,5 3,9" />
-										</svg>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="card-title h4 text-center">Chevron right</h4>
-								</div>
-								<div class="card-footer">
-									<h5 class="text-body-secondary">HTML code (full)</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><div>2</div><div>3</div><td class=cd-line><div class=cd-row><span>&lt;</span><span class=h-na>svg</span>&nbsp;<span class=h-prop>width</span>=<span class=h-val>"15"</span>&nbsp;<span class=h-prop>height</span>=<span class=h-val>"15"</span>&nbsp;<span class=h-prop>viewbox</span>=<span class=h-val>"0&nbsp;0&nbsp;10&nbsp;10"</span>&nbsp;<span class=h-prop>stroke-width</span>=<span class=h-val>"1"</span>&nbsp;<span class=h-prop>fill</span>=<span class=h-val>"none"</span>&nbsp;<span class=h-prop>stroke</span>=<span class=h-val>"#000"</span>&nbsp;<span class=h-prop>class</span>=<span class=h-val>"ico"</span><span>&gt;</span></div><div class=cd-row>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span class=h-na>polyline</span>&nbsp;<span class=h-prop>points</span>=<span class=h-val>"3,1&nbsp;7,5&nbsp;3,9"</span><span>/&gt;</span></div><div class=cd-row><span>&lt;</span><span>/</span><span class=h-na>svg</span><span>&gt;</span></div></table>
-									</div>
-								</div>
-								<div class="card-footer">
-									<h5 class="text-body-secondary">HTML code (short)</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><td class=cd-line><div class=cd-row><span>&lt;</span><span class=h-na>svg</span>&nbsp;<span class=h-prop>viewbox</span>=<span class=h-val>"0&nbsp;0&nbsp;10&nbsp;10"</span>&nbsp;<span class=h-prop>class</span>=<span class=h-val>"ico"</span><span>&gt;</span><span>&lt;</span><span class=h-na>polyline</span>&nbsp;<span class=h-prop>points</span>=<span class=h-val>"3,1&nbsp;7,5&nbsp;3,9"</span><span>/&gt;</span><span>&lt;</span><span>/</span><span class=h-na>svg</span><span>&gt;</span></div></table>
-									</div>
-									<h5 class="text-body-secondary mt-3">CSS</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><td class=cd-line><div class=cd-row><span class=cs-na>.ico</span>{</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;width</span>:<span class=cs-val>&nbsp;15px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;height</span>:<span class=cs-val>&nbsp;15px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;stroke</span>:<span class=cs-val>&nbsp;#000</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;stroke-width</span>:<span class=cs-val>&nbsp;1px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;fill</span>:<span class=cs-val>&nbsp;none</span>;</div><div class=cd-row>}</div></table>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col">
-							<div class="card">
-								<div class="p-3 pb-0">
-									<div class="text-center p-3">
-										<svg width="50" height="50" viewbox="0 0 10 10" stroke-width="1" fill="none" stroke="#000">
-											<polyline points="7,1 3,5 7,9" />
-										</svg>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="card-title h4 text-center">Chevron left</h4>
-								</div>
-								<div class="card-footer">
-									<h5 class="text-body-secondary">HTML code (full)</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><div>2</div><div>3</div><td class=cd-line><div class=cd-row><span>&lt;</span><span class=h-na>svg</span>&nbsp;<span class=h-prop>width</span>=<span class=h-val>"15"</span>&nbsp;<span class=h-prop>height</span>=<span class=h-val>"15"</span>&nbsp;<span class=h-prop>viewbox</span>=<span class=h-val>"0&nbsp;0&nbsp;10&nbsp;10"</span>&nbsp;<span class=h-prop>stroke-width</span>=<span class=h-val>"1"</span>&nbsp;<span class=h-prop>fill</span>=<span class=h-val>"none"</span>&nbsp;<span class=h-prop>stroke</span>=<span class=h-val>"#000"</span>&nbsp;<span class=h-prop>class</span>=<span class=h-val>"ico"</span><span>&gt;</span></div><div class=cd-row>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span class=h-na>polyline</span>&nbsp;<span class=h-prop>points</span>=<span class=h-val>"7,1&nbsp;3,5&nbsp;7,9"</span><span>/&gt;</span></div><div class=cd-row><span>&lt;</span><span>/</span><span class=h-na>svg</span><span>&gt;</span></div></table>
-									</div>
-								</div>
-								<div class="card-footer">
-									<h5 class="text-body-secondary">HTML code (short)</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><td class=cd-line><div class=cd-row><span>&lt;</span><span class=h-na>svg</span>&nbsp;<span class=h-prop>viewbox</span>=<span class=h-val>"0&nbsp;0&nbsp;10&nbsp;10"</span>&nbsp;<span class=h-prop>class</span>=<span class=h-val>"ico"</span><span>&gt;</span><span>&lt;</span><span class=h-na>polyline</span>&nbsp;<span class=h-prop>points</span>=<span class=h-val>"7,1&nbsp;3,5&nbsp;7,9"</span><span>/&gt;</span><span>&lt;</span><span>/</span><span class=h-na>svg</span><span>&gt;</span></div></table>
-									</div>
-									<h5 class="text-body-secondary mt-3">CSS</h5>
-									<div class="colorscripter-code fira">
-										<table cellpadding=0 cellspacing=0 class=colorscripter-code-table><tr><td class=num-line><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><td class=cd-line><div class=cd-row><span class=cs-na>.ico</span>{</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;width</span>:<span class=cs-val>&nbsp;15px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;height</span>:<span class=cs-val>&nbsp;15px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;stroke</span>:<span class=cs-val>&nbsp;#000</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;stroke-width</span>:<span class=cs-val>&nbsp;1px</span>;</div><div class=cd-row><span class=cs-prop>&nbsp;&nbsp;&nbsp;&nbsp;fill</span>:<span class=cs-val>&nbsp;none</span>;</div><div class=cd-row>}</div></table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					 <div class="row row-cols-1 row-cols-md-2 g-4 card-container"></div>
 				</div>
 				<div class="tab-pane fade" id="pills-arrow" role="tabpanel" aria-labelledby="pills-arrow-tab" tabindex="0">
-					화살표
+					 <div class="row row-cols-1 row-cols-md-2 g-4 card-container"></div>
 				</div>
 				<div class="tab-pane fade" id="pills-media" role="tabpanel" aria-labelledby="pills-media-tab" tabindex="0">
-					미디어
+					 <div class="row row-cols-1 row-cols-md-2 g-4 card-container"></div>
 				</div>
-			</div>
+				<div class="tab-pane fade" id="pills-sign" role="tabpanel" aria-labelledby="pills-sign-tab" tabindex="0">
+					 <div class="row row-cols-1 row-cols-md-2 g-4 card-container"></div>
+				</div>
+				<div class="tab-pane fade" id="pills-etc" role="tabpanel" aria-labelledby="pills-etc-tab" tabindex="0">
+					 <div class="row row-cols-1 row-cols-md-2 g-4 card-container"></div>
+				</div>
+		  </div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 	
-	<div class="container mt-5 mb-5">
-		<blockquote>
-			* 사용한 기술<br>
-			- chatGPT, Bootstrap, jquery<br>
-			* 참고한 사이트<br>
-			- Color Scripter (https://colorscripter.com/)
-		</blockquote>
-	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+	<script>
+		// 전역 변수로 데이터 저장
+		let iconData = [];
+		
+		// 카드 템플릿 정의
+		const cardTemplate = `
+			 <div class="col">
+				  <div class="card">
+						<div class="p-3 pb-0">
+							 <div class="text-center p-3" id="d-view"></div>
+						</div>
+						<div class="card-body">
+							 <h4 class="card-title h4 text-center" id="d-name"></h4>
+						</div>
+						<div class="card-footer">
+							 <h5 class="text-body-secondary">HTML code (full)</h5>
+							 <div class="colorscripter-code fira" id="d-full"></div>
+						</div>
+						<div class="card-footer">
+							 <h5 class="text-body-secondary">HTML code (short)</h5>
+							 <div class="colorscripter-code fira" id="d-short"></div>
+							 <h5 class="text-body-secondary mt-3">CSS</h5>
+							 <div class="colorscripter-code fira" id="d-css"></div>
+						</div>
+				  </div>
+			 </div>
+		`;
+		
+		// JSON 데이터 로드
+		$.ajax({
+			url: 'icons_data.json',
+			async: true,
+			traditional: true,
+			dataType: 'json',
+			success: function(result) {
+				// 데이터 저장
+				iconData = result;
+				// 초기에는 모든 아이콘 표시
+				displayIcons('all');
+			},
+			error: function() {
+				alert('데이터를 불러오는데 실패했습니다.');
+			}
+		});
+		
+		// 아이콘 표시 함수
+		function displayIcons(category) {
+			// 어떤 탭이 활성화되었는지 확인
+			const activeTab = $(".tab-pane.active");
+			// 활성화된 탭의 카드 컨테이너 선택
+			const cardContainer = activeTab.find(".card-container");
+			
+			// 기존 카드 내용 비우기
+			cardContainer.empty();
+			
+			// 필터링할 아이콘 데이터
+			let icons = [];
+			
+			if (category === 'all') {
+				// 모든 카테고리의 아이콘을 하나의 배열로 합치기
+				Object.keys(iconData).forEach(key => {
+						icons = icons.concat(iconData[key]);
+				});
+			} else {
+				// 특정 카테고리의 아이콘만 가져오기
+				icons = iconData[`cate-${category}`] || [];
+			}
+			
+			// 아이콘 표시
+			for (let i = 0; i < icons.length; i++) {
+				cardContainer.append(cardTemplate);
+				
+				const currentCard = cardContainer.find('.card').last();
+				
+				currentCard.find('#d-view').html(icons[i]['view-code']);
+				currentCard.find('#d-name').html(icons[i]['name']);
+				currentCard.find('#d-full').html(icons[i]['html-full']);
+				currentCard.find('#d-short').html(icons[i]['html-short']);
+				currentCard.find('#d-css').html(icons[i]['css-code']);
+			}
+		}
+		
+		// 탭 클릭 이벤트 처리
+		$('#cate-tab .nav-link').click(function() {
+			 var cateID = $(this).data('bs-target');
+			 
+			 // 각 탭에 대해 해당 카테고리의 아이콘 표시
+			 switch(cateID) {
+				  case "#pills-all":
+						displayIcons('all');
+						break;
+				  case "#pills-arrow":
+						displayIcons('arrow');
+						break;
+				  case "#pills-media":
+						displayIcons('media');
+						break;
+				  case "#pills-sign":
+						displayIcons('sign');
+						break;
+				  case "#pills-etc":
+						displayIcons('etc');
+						break;
+			 }
+		});
+  </script>
 </body>
 </html>
