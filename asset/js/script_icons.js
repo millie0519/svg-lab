@@ -136,12 +136,22 @@ $(function(){
 		lastScroll = nowScroll;
 	}
 
+	function setHeight(){
+		var headh = $('header').innerHeight();
+			 footh = $('footer').innerHeight();
+			 seth = $(window).innerHeight() - headh - footh;
+
+		$('.sec').css('min-height', seth)
+	}
+
 	$(window).scroll(function(){
 		scrollFix();
 		scrollDirection();
+		setHeight();
 	});
 	$(window).resize(function(){
 		scrollFix();
 		scrollDirection();
+		setHeight();
 	});
 });
